@@ -4,7 +4,7 @@ import user from "./assets/user.svg";
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
 
-let loadVariable;
+let loadInterval;
 
 function loader(element) {
   element.textContent = "";
