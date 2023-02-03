@@ -84,8 +84,7 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  // "https://chaty-ai.onrender.com/"
-  const response = await fetch("https://localhost:5000/", {
+  const response = await fetch("http://localhost:5000/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -106,7 +105,6 @@ const handleSubmit = async (e) => {
   } else {
     const err = await response.text();
 
-    console.log(err);
     messageDiv.innerHTML = "Something went wrong";
     alert(err);
   }
