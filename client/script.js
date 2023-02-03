@@ -84,7 +84,8 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch("https://chaty-ai.onrender.com/", {
+  // "https://chaty-ai.onrender.com/"
+  const response = await fetch("https://localhost:5000/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
